@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
-  get 'about/index'
 
   resources :books
+  resources :categories
+  resources :authors
+  resources :publishers
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+
+  get 'about' => 'about#index'
+  get '/hello' , :to => redirect('/helloworld.html')
   root 'about#index'
 
   # Example of regular route:
