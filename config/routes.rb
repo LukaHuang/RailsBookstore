@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get 'about' => 'about#index'
   get '/hello' , :to => redirect('/helloworld.html')
-  root 'about#index'
+  root 'books#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bookstore</title>
+  <title>The Bookstore Store</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
   <%= render "partials/navbar" %>
+  <header>
+    <div class="container">
+      <h1>The BookStore <small>Welcome<small></h1>
+    </div>
+  </header>
 
-  <%= yield %>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <%= yield %>
+        </div>
+        <div class="col-md-4">
+      </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2014, All Rights Reserved</p>
+    </div>
+  </footer>
+
 </body>
 </html>
