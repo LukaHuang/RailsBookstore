@@ -38,3 +38,22 @@
  	padding-top:20px;
   font-size: 14px;
  }
+
+#book-index{
+  text-align: center;
+}
+
+#book-index img{
+  width: 100%;
+  padding: 3px;
+  border: 1px #ccc solid;
+}
+
+#book-index h3{
+  height: 50px;
+}
+
+#book-index .btn{
+  display: block;
+  margin-top: 20px
+}
