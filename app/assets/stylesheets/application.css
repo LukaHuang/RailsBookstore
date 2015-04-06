@@ -57,3 +57,25 @@
   display: block;
   margin-top: 20px
 }
+
+#books-show h2{
+	background:#f4f4f4;
+	padding:10px;
+}
+
+.books-show-left{
+
+}
+
+#books-show > div.row > div.books-show-left.col-md-6 > img{
+  margin: 10px 20px 10px 40px;
+}
+
+.books-show-right{
+
+}
+
+#books-show .btn{
+
+	margin:15px 0 0 25px;
+}
