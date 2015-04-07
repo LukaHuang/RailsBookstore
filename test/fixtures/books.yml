@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  isbn: MyString
+  year: MyString
+  price: MyString
+  buy: MyString
+  excerpt: MyText
+  format: MyString
+  pages: 1
+  coverpath: MyString
+
+two:
+  title: MyString
+  isbn: MyString
+  year: MyString
+  price: MyString
+  buy: MyString
+  excerpt: MyText
+  format: MyString
+  pages: 1
+  coverpath: MyString
