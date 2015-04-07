@@ -1,0 +1,19 @@
+<h2><%= @page_title %></h2>
+
+<form action="<%= authors_path %>" method="post">
+  <div class="form-group">
+    <label for="first-name">First Name:</label>
+    <input type="text" class="form-control" id="first-name" name="author[first_name]" placeholder="">
+  </div>
+
+  <div class="form-group">
+    <label for="last-name">Last Name:</label>
+    <input type="text" class="form-control" id="last-name" name="author[last_name]" placeholder="">
+  </div>
+
+  <input type='submit' value="Submit" class='btn btn-default' >
+
+
+  <%= link_to "Cancel", authors_path , class: "btn btn-default" %>
+  <a href="<%= authors_path %>" class="btn btn-default">Cancel</a>
+</form>
