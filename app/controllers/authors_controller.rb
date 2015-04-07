@@ -4,7 +4,6 @@ class AuthorsController < ApplicationController
   end
 
   def show
-    @author
   end
 
   def new
@@ -34,8 +33,12 @@ class AuthorsController < ApplicationController
   end
 
   def destroy
+    @author = Author.find(params[:id])
+    @author.destroy
+    flash[:notice] = "Author Removed"
+    redirect_to authors_path
   end
-
+  
 
   private
 
